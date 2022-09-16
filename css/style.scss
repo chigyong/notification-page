@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+p {
+    margin-left: 10px;
+    font-size: 13px;
+    width: 75%;
+    span {
+        font-weight: 800;
+    }
+}
+img {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+.card {
+    margin: 1rem;
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        .notification {
+            font-weight: 800;
+            
+        }
+        .box {
+            background-color: hsl(219, 85%, 26%);
+            padding: 5px 15px 5px 5px;
+            color: white;
+            margin-right: 70px;
+            text-align: left;
+        }
+    }
+    .notif {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+        background-color: hsl(210, 60%, 98%);
+
+    }
+    .notif-noborder {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0 0 0;
+    }
+    .notif-content {
+        border-style: groove;
+        width: 70%;
+        margin: 10px 0 10px 65px;
+        text-align: justify;
+    }
+    .notif-content:hover {
+        background-color: hsl(211, 68%, 94%);
+    }
+    
+}
+@media only screen and (min-width:1440px) {
+   body {
+    background-color: hsl(210, 60%, 98%);
+   }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem;
+    }
+    .card {
+        background-color: white;
+        width: 60%;
+        .header {
+            .box {
+                margin-right: 600px;
+            }
+           }
+        
+        .notif-content {
+            padding: 20px 0 20px 0;  
+        }
+    }
+}
